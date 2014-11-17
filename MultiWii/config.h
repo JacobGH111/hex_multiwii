@@ -60,7 +60,7 @@
     //#define MINTHROTTLE 1120 // for Super Simple ESCs 10A
     //#define MINTHROTTLE 1064 // special ESC (simonk)
     //#define MINTHROTTLE 1050 // for brushed ESCs like ladybird
-    #define MINTHROTTLE  1000// (X1)
+    #define MINTHROTTLE  900// (X1)
 
   /****************************    Motor maxthrottle    *******************************/
     /* this is the maximum value for the ESCs at full power, this value can be increased up to 2000 */
@@ -669,7 +669,7 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
        in NMEA mode the GPS must be configured to output GGA and RMC NMEA sentences (which is generally the default conf for most GPS devices)
        at least 5Hz update rate. uncomment the first line to select the GPS serial port of the arduino */
        
-    #define GPS_SERIAL 2         // should be 2 for flyduino v2. It's the serial port number on arduino MEGA
+   // #define GPS_SERIAL 2         // should be 2 for flyduino v2. It's the serial port number on arduino MEGA
                                    // must be 0 for PRO_MINI (ex GPS_PRO_MINI)
                                    // note: Now a GPS can share MSP on the same port. The only constrain is to not use it simultaneously, and use the same port speed.
 
@@ -684,11 +684,11 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
        With UBLOX and MTK_BINARY you don't have to use GPS_FILTERING in multiwii code !!! */
 
     
-    #define NMEA
+    //#define NMEA
     //#define UBLOX
     //#define MTK_BINARY16
     //#define MTK_BINARY19
-    //#define INIT_MTK_GPS        // initialize MTK GPS for using selected speed, 5Hz update rate and GGA & RMC sentence or binary settings
+   //define INIT_MTK_GPS        // initialize MTK GPS for using selected speed, 5Hz update rate and GGA & RMC sentence or binary settings
 
 
     /* I2C GPS device made with an independant arduino + GPS device

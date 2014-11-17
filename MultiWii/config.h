@@ -605,7 +605,7 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
     #define FAILSAFE_OFF_DELAY 200                    // Time for Landing before motors stop in 0.1sec. 1 step = 0.1sec - 20sec in example
     #define FAILSAFE_THROTTLE  (MINTHROTTLE + 200)    // (*) Throttle level used for landing - may be relative to MINTHROTTLE - as in this case
     
-    #define FAILSAFE_DETECT_TRESHOLD  985
+    #define FAILSAFE_DETECT_TRESHOLD  950
 
 
   /*****************                DFRobot LED RING    *********************************/

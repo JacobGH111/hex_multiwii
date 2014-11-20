@@ -14,7 +14,7 @@
     <PID id="7" name="Level" p="90" i="10" d="100" />
     <PID id="8" name="Mag" p="40" i="0" d="0" />
     <AUXFUNC id="0" aux1234="0" />
-    <AUXFUNC id="1" aux1234="32" />
+    <AUXFUNC id="1" aux1234="1000" />
     <AUXFUNC id="2" aux1234="0" />
     <AUXFUNC id="3" aux1234="0" />
     <AUXFUNC id="4" aux1234="0" />

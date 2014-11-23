@@ -22,7 +22,8 @@
     <AUXFUNC id="6" aux1234="16" />
     <AUXFUNC id="7" aux1234="0" />
     <AUXFUNC id="8" aux1234="0" />
-    <AUXFUNC id="9" aux1234="141" />
+    <!-- <AUXFUNC id="9" aux1234="141" /> -->
+    <AUXFUNC id="9" aux1234="127" /> <!-- vbatscale -->
     <AUXFUNC id="10" aux1234="0" />
     <AUXFUNC id="11" aux1234="0" />
     <AUXFUNC id="12" aux1234="0" />

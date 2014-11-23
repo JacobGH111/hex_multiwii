@@ -22,8 +22,7 @@
     <AUXFUNC id="6" aux1234="16" />
     <AUXFUNC id="7" aux1234="0" />
     <AUXFUNC id="8" aux1234="0" />
-    <!-- <AUXFUNC id="9" aux1234="141" /> -->
-    <AUXFUNC id="9" aux1234="127" /> <!-- vbatscale -->
+    <AUXFUNC id="9" aux1234="127" />
     <AUXFUNC id="10" aux1234="0" />
     <AUXFUNC id="11" aux1234="0" />
     <AUXFUNC id="12" aux1234="0" />
@@ -38,10 +37,10 @@
     <AUXFUNC id="21" aux1234="0" />
     <AUXFUNC id="22" aux1234="0" />
     <AUXFUNC id="23" aux1234="0" />
-    <RCRATE value="90" />
-    <RCEXPO value="65" />
-    <THMID value="50" />
-    <THEXPO value="50" />
+    <RCRATE value="100" />
+    <RCEXPO value="0" />
+    <THMID value="0" />
+    <THEXPO value="0" />
     <ROLLPITCHRATE value="0" />
     <YAWRATE value="0" />
     <DYNTHRPID value="0" />

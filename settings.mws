@@ -37,10 +37,10 @@
     <AUXFUNC id="21" aux1234="0" />
     <AUXFUNC id="22" aux1234="0" />
     <AUXFUNC id="23" aux1234="0" />
-    <RCRATE value="100" />
-    <RCEXPO value="0" />
-    <THMID value="0" />
-    <THEXPO value="0" />
+    <RCRATE value="97" />
+    <RCEXPO value="83" />
+    <THMID value="45" />
+    <THEXPO value="45" />
     <ROLLPITCHRATE value="0" />
     <YAWRATE value="0" />
     <DYNTHRPID value="0" />

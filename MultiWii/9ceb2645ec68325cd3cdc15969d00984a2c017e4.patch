@@ -1,0 +1,59 @@
+From 9ceb2645ec68325cd3cdc15969d00984a2c017e4 Mon Sep 17 00:00:00 2001
+From: Koen Kooi <koen@dominion.thruhere.net>
+Date: Sat, 26 Apr 2014 09:56:46 +0200
+Subject: [PATCH] IMU.cpp: Altitude hold fix by Happul3
+
+See http://www.multiwii.com/forum/viewtopic.php?f=8&t=4992&start=10#p49929
+
+Signed-off-by: Koen Kooi <koen@dominion.thruhere.net>
+---
+ IMU.cpp      | 2 +-
+ MultiWii.cpp | 2 +-
+ MultiWii.h   | 1 +
+ 3 files changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/IMU.cpp b/IMU.cpp
+index 1a758ca..e14a24d 100644
+--- a/IMU.cpp
++++ b/IMU.cpp
+@@ -366,7 +366,7 @@ uint8_t getEstimatedAltitude(){
+     //D
+     alt.vario = vel;
+     applyDeadband(alt.vario, 5);
+-    BaroPID -= constrain(conf.pid[PIDALT].D8 * alt.vario >>4, -150, 150);
++    BaroPID -= constrain(conf.pid[PIDALT].D8 * (alt.vario - (rcCommand[THROTTLE]-initialThrottleHold)/2 )>>4, -150, 150);
+   #endif
+   return 1;
+ }
+diff --git a/MultiWii.cpp b/MultiWii.cpp
+index 3ecc03c..b6f4ddb 100644
+--- a/MultiWii.cpp
++++ b/MultiWii.cpp
+@@ -163,6 +163,7 @@ int32_t  AltHold; // in cm
+ int16_t  sonarAlt;
+ int16_t  BaroPID = 0;
+ int16_t  errorAltitudeI = 0;
++int16_t  initialThrottleHold;
+ 
+ // **************
+ // gyro+acc IMU
+@@ -777,7 +778,6 @@ void loop () {
+   int16_t AngleRateTmp, RateError;
+ #endif
+   static uint16_t rcTime  = 0;
+-  static int16_t initialThrottleHold;
+   int16_t rc;
+   int32_t prop = 0;
+ 
+diff --git a/MultiWii.h b/MultiWii.h
+index 5572b5d..e4391c0 100644
+--- a/MultiWii.h
++++ b/MultiWii.h
+@@ -43,6 +43,7 @@ extern int32_t  AltHold;
+ extern int16_t  sonarAlt;
+ extern int16_t  BaroPID;
+ extern int16_t  errorAltitudeI;
++extern int16_t  initialThrottleHold;
+ 
+ extern int16_t  i2c_errors_count;
+ extern uint8_t alarmArray[16];

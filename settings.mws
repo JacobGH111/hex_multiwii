@@ -7,7 +7,7 @@
     <PID id="0" name="Roll" p="33" i="30" d="23" />
     <PID id="1" name="Pitch" p="33" i="30" d="23" />
     <PID id="2" name="Yaw" p="68" i="45" d="0" />
-    <PID id="3" name="Altitude" p="31" i="60" d="8" />
+    <PID id="3" name="Altitude" p="20" i="20" d="9" />
     <PID id="4" name="PosHold" p="20" i="0" d="0" />
     <PID id="5" name="PosHoldRate" p="20" i="11" d="25" />
     <PID id="6" name="Navigation Rate" p="25" i="33" d="83" />
@@ -22,7 +22,7 @@
     <AUXFUNC id="6" aux1234="16" />
     <AUXFUNC id="7" aux1234="0" />
     <AUXFUNC id="8" aux1234="0" />
-    <AUXFUNC id="9" aux1234="0" />
+    <AUXFUNC id="9" aux1234="2048" />
     <AUXFUNC id="10" aux1234="0" />
     <AUXFUNC id="11" aux1234="0" />
     <AUXFUNC id="12" aux1234="0" />
